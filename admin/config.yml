@@ -1,0 +1,75 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Quản lý Dự án"
+    files:
+      - label: "Danh sách dự án"
+        name: "projects"
+        file: "data/projects.json"
+        description: "Quản lý danh sách các dự án xuất hiện trên trang chủ và trang portfolio."
+        fields:
+          - name: "items"
+            label: "Dự án"
+            widget: "list"
+            fields:
+              - {label: "Slug (ID dự án, viết liền không dấu, VD: cyberpunk-vfx)", name: "slug", widget: "string"}
+              - {label: "Tên dự án", name: "title", widget: "string"}
+              - {label: "Danh mục lọc (VD: wedding, event, vfx, ads)", name: "category", widget: "string"}
+              - {label: "Thể loại phụ đề (VD: VFX | Compositing)", name: "type", widget: "string"}
+              - {label: "Ảnh đại diện", name: "thumbnail", widget: "image", required: false}
+              - {label: "ID Video Youtube", name: "videoId", widget: "string", required: false, hint: "Mã code sau v= của link Youtube"}
+              - {label: "Đây là dự án hiệu ứng vuốt chạm (VFX Slider)?", name: "isVFX", widget: "boolean", default: false}
+              - {label: "Ảnh Gốc - Raw (Cho VFX Slider)", name: "vfxBefore", widget: "image", required: false}
+              - {label: "Ảnh Hoàn thiện - Final (Cho VFX Slider)", name: "vfxAfter", widget: "image", required: false}
+              - {label: "Mô tả chi tiết", name: "description", widget: "markdown", required: false}
+              - name: "credits"
+                label: "Đội ngũ thực hiện (Credits)"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Vai trò (VD: Director)", name: "role", widget: "string"}
+                  - {label: "Tên (VD: Nguyen Van A)", name: "name", widget: "string"}
+              - name: "gallery"
+                label: "Thư viện ảnh (Gallery)"
+                widget: "list"
+                required: false
+                field: {label: "Ảnh", name: "image", widget: "image"}
+
+  - name: "site"
+    label: "Cấu hình Website"
+    files:
+      - label: "Thông tin chung"
+        name: "settings"
+        file: "data/site.json"
+        description: "Chỉnh sửa thông tin giới thiệu, liên hệ và dịch vụ."
+        fields:
+          - name: "site"
+            label: "Cấu hình"
+            widget: "object"
+            fields:
+              - {label: "Tên Website", name: "name", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Sub Tagline", name: "sub_tagline", widget: "string"}
+              - {label: "Ảnh nền Hero", name: "hero_bg", widget: "image", required: false}
+              - {label: "Giới thiệu (Ngắn gọn - Trang chủ)", name: "about_short", widget: "text"}
+              - {label: "Giới thiệu (Chi tiết - Trang About)", name: "about_long", widget: "markdown"}
+              - {label: "Email Liên hệ", name: "email", widget: "string"}
+              - {label: "Điện thoại", name: "phone", widget: "string"}
+              - name: "services"
+                label: "Danh sách Dịch vụ"
+                widget: "list"
+                fields:
+                  - {label: "Tên dịch vụ", name: "name", widget: "string"}
+                  - {label: "Mô tả", name: "desc", widget: "text"}
+              - name: "social"
+                label: "Mạng xã hội"
+                widget: "list"
+                fields:
+                  - {label: "Nền tảng (VD: Facebook)", name: "platform", widget: "string"}
+                  - {label: "Đường dẫn URL", name: "url", widget: "string"}

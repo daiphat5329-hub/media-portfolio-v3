@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Portfolio | High-end Studio</title>
+    <meta name="description" content="Portfolio chuyên quay và dựng video với phong cách chuyên nghiệp.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Cinematic Overlays -->
+    <div class="noise-overlay"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">MEDIA<span>PRO</span></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Trang chủ</a></li>
+            <li><a href="portfolio.html">Dự án</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="services.html">Dịch vụ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero-giant">
+        <div class="hero-giant-bg" id="hero-bg-img" style="background-image: url('images/uploads/hero_bg_lunchbox.png')"></div>
+        <p class="sub" id="hero-subtagline">Creative Studio</p>
+        <h1 class="giant-text text-stroke" id="hero-tagline">KỂ CÂU CHUYỆN<br>CỦA BẠN</h1>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container split-layout gs-reveal">
+            <div class="split-left">
+                <h2 class="huge-text" style="margin-bottom: 30px;">TẠO RA<br><span style="color: var(--primary-color);">CẢM XÚC</span></h2>
+                <div id="about-short-text" style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px;">
+                    <p>Chào bạn, mình là một nhà làm phim tự do với đam mê ghi lại những khoảnh khắc đẹp nhất.</p>
+                </div>
+                <div><a href="about.html" class="btn">Đọc thêm về mình</a></div>
+            </div>
+            <div class="split-right" style="overflow: hidden;">
+                <img src="images/uploads/vfx_city_after.png" class="split-img" alt="Cinematic View">
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio" style="padding-top: 50px;">
+        <div class="container">
+            <h2 class="huge-text gs-reveal" style="margin-bottom: 60px;">DỰ ÁN<br>NỔI BẬT</h2>
+            
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Javascript will load a few projects here -->
+            </div>
+            
+            <div style="text-align: center; margin-top: 100px;" class="gs-reveal">
+                <a href="portfolio.html" class="btn">Xem Tất Cả Dự Án</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Marquee Section -->
+    <section class="clients gs-reveal" style="padding: 100px 0; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); overflow: hidden;">
+        <div class="container" style="margin-bottom: 50px;">
+            <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;">Trusted by Industry Leaders</p>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <!-- Logos will be duplicated to create infinite scroll effect -->
+                <img src="https://logo.clearbit.com/mercedes-benz.com" alt="Mercedes Benz">
+                <img src="https://logo.clearbit.com/porsche.com" alt="Porsche">
+                <img src="https://logo.clearbit.com/thesingleton.com" alt="Singleton">
+                <img src="https://logo.clearbit.com/cgv.vn" alt="CGV Cinema">
+                <img src="https://logo.clearbit.com/zlab.com.vn" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 30\'><text x=\'0\' y=\'20\' fill=\'white\' font-family=\'sans-serif\' font-size=\'20\' font-weight=\'bold\'>ZLAB</text></svg>'" alt="Zlab">
+                <img src="https://logo.clearbit.com/bmw.com" alt="BMW">
+                <img src="https://logo.clearbit.com/orion.vn" alt="Orion">
+                <!-- Duplicate for seamless loop -->
+                <img src="https://logo.clearbit.com/mercedes-benz.com" alt="Mercedes Benz">
+                <img src="https://logo.clearbit.com/porsche.com" alt="Porsche">
+                <img src="https://logo.clearbit.com/thesingleton.com" alt="Singleton">
+                <img src="https://logo.clearbit.com/cgv.vn" alt="CGV Cinema">
+                <img src="https://logo.clearbit.com/zlab.com.vn" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 30\'><text x=\'0\' y=\'20\' fill=\'white\' font-family=\'sans-serif\' font-size=\'20\' font-weight=\'bold\'>ZLAB</text></svg>'" alt="Zlab">
+                <img src="https://logo.clearbit.com/bmw.com" alt="BMW">
+                <img src="https://logo.clearbit.com/orion.vn" alt="Orion">
+            </div>
+        </div>
+    </section>
+
+    <section id="services-highlight" class="services">
+        <div class="container gs-reveal">
+            <h2 class="huge-text" style="margin-bottom: 60px;">CHUYÊN MÔN</h2>
+            <div class="service-list" id="services-list">
+                <!-- Javascript load from site.json -->
+                <div class="service-item">
+                    <h3 class="huge-text text-stroke">QUAY PHIM</h3>
+                    <p>Cinematography</p>
+                </div>
+                <div class="service-item">
+                    <h3 class="huge-text text-stroke">DỰNG PHIM</h3>
+                    <p>Video Editing</p>
+                </div>
+                <div class="service-item">
+                    <h3 class="huge-text text-stroke">KỸ XẢO</h3>
+                    <p>VFX & 3D</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-cta" class="contact">
+        <div class="container gs-reveal" style="text-align: center;">
+            <h2 class="giant-text text-stroke" style="margin-bottom: 40px;">BẮT ĐẦU<br>DỰ ÁN</h2>
+            <a href="contact.html" class="btn">Liên hệ Ngay</a>
+        </div>
+    </section>
+
+    <footer>
+        <div style="width: 100%; position: relative;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <p>&copy; <span id="year">2026</span></p>
+                <p>All rights reserved.</p>
+            </div>
+            <h1 class="footer-giant" id="footer-name">MediaPro</h1>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="youtubePlayer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) { window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; }); }
+        });
+      }
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

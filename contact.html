@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ | High-end Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="noise-overlay"></div>
+    <div class="ambient-glow glow-1"></div>
+
+    <nav class="navbar" style="background: rgba(10, 10, 10, 0.95);">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">MEDIA<span>PRO</span></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="portfolio.html">Dự án</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="services.html">Dịch vụ</a></li>
+            <li><a href="contact.html" class="active">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="subpage-hero gs-reveal">
+        <div class="container">
+            <h1 class="giant-text text-stroke">HELLO.</h1>
+        </div>
+    </div>
+
+    <section id="contact" class="contact" style="padding-top: 50px;">
+        <div class="container">
+            <div class="contact-grid gs-reveal">
+                <div>
+                    <h2 class="huge-text" style="margin-bottom: 30px;">HÃY NÓI VỀ<br><span style="color: var(--primary-color);">DỰ ÁN CỦA BẠN</span></h2>
+                    <p style="color: var(--text-muted); font-size: 1.5rem; margin-bottom: 20px;">Email: <br><a id="contact-email" href="mailto:hello@mediapro.vn" style="color: #fff;">hello@mediapro.vn</a></p>
+                    <p style="color: var(--text-muted); font-size: 1.5rem;">Phone: <br><span id="contact-phone" style="color: #fff;">0987 654 321</span></p>
+                    <div id="social-links" style="margin-top: 60px; display: flex; flex-direction: column; gap: 15px;">
+                        <!-- Social links loaded via JS -->
+                    </div>
+                </div>
+                <div>
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p class="hide" style="display: none;"><label><input name="bot-field" /></label></p>
+                        
+                        <input type="text" name="name" placeholder="Tên của bạn" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Kể cho tôi nghe về ý tưởng..." rows="5" required></textarea>
+                        
+                        <button type="submit" class="btn">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="width: 100%; position: relative;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <p>&copy; <span id="year">2026</span></p>
+                <p>All rights reserved.</p>
+            </div>
+            <h1 class="footer-giant" id="footer-name">MediaPro</h1>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

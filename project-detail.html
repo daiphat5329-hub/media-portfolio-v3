@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết dự án | High-end Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .loading-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg-color); z-index: 9999; display: flex; justify-content: center; align-items: center; color: var(--primary-color); font-family: var(--font-heading); font-size: 2rem; transition: opacity 0.5s; text-transform: uppercase; }
+        .detail-page .hero-giant { height: 80vh; justify-content: flex-end; padding-bottom: 100px; }
+        .detail-page .hero-giant-bg { filter: grayscale(50%); opacity: 0.5; }
+        .detail-page .hero-giant:hover .hero-giant-bg { filter: grayscale(0%); opacity: 0.7; }
+        .detail-info { font-size: 1.5rem; line-height: 1.8; }
+        .credits-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 40px; }
+        .credits-list li { font-size: 1.2rem; }
+    </style>
+</head>
+<body class="detail-page">
+    <div id="loading" class="loading-screen">Đang tải...</div>
+        <div class="noise-overlay"></div>
+    <div class="ambient-glow glow-1"></div>
+
+    <nav class="navbar" style="background: rgba(10, 10, 10, 0.95);">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">MEDIA<span>PRO</span></a></div>
+        <ul class="nav-links">
+            <li><a href="portfolio.html">← Quay lại Dự án</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-giant" id="pd-hero">
+        <div class="hero-giant-bg" id="pd-hero-bg"></div>
+        <p class="sub gs-reveal" id="pd-type">Thể loại dự án</p>
+        <h1 class="giant-text text-stroke gs-reveal" id="pd-title" style="font-size: 8vw;">Tên Dự Án</h1>
+    </header>
+
+    <div class="container project-content">
+        <!-- Project Video -->
+        <div class="detail-section gs-reveal" id="pd-video-section" style="display: none; padding-bottom: 100px;">
+            <div class="video-container">
+                <iframe id="pd-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="split-layout gs-reveal" style="padding-bottom: 100px;">
+            <div class="detail-info">
+                <h2 class="huge-text" style="color: var(--primary-color); margin-bottom: 30px;">VỀ DỰ ÁN</h2>
+                <div id="pd-desc"></div>
+            </div>
+
+            <div class="detail-credits" id="pd-credits-section">
+                <h2 class="huge-text" style="color: var(--primary-color);">CREDITS</h2>
+                <ul class="credits-list" id="pd-credits"></ul>
+            </div>
+        </div>
+
+        <!-- VFX Slider -->
+        <div class="detail-section gs-reveal" id="pd-vfx-section" style="display: none; padding-bottom: 100px;">
+            <h2 class="huge-text" style="margin-bottom: 50px;">VFX BREAKDOWN</h2>
+            <div class="vfx-slider" style="height: 600px; border: 1px solid rgba(255,255,255,0.1);">
+                <div class="vfx-image after-image" id="pd-vfx-after"><span class="vfx-label label-after">FINAL</span></div>
+                <div class="vfx-image before-image" id="pd-vfx-before"><span class="vfx-label label-before">RAW</span></div>
+                <input type="range" min="0" max="100" value="50" class="vfx-range" id="pd-vfx-range">
+                <div class="slider-handle" id="pd-vfx-handle"></div>
+            </div>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="detail-section gs-reveal" id="pd-gallery-section" style="display: none; padding-bottom: 100px;">
+            <h2 class="huge-text" style="margin-bottom: 50px;">GALLERY</h2>
+            <div id="pd-gallery" style="display: flex; flex-direction: column; gap: 20px;"></div>
+        </div>
+
+        <!-- Related Projects -->
+        <div class="detail-section gs-reveal" id="pd-related-section" style="display: none; padding-bottom: 100px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 100px;">
+            <h2 class="huge-text" style="margin-bottom: 50px;">DỰ ÁN LIÊN QUAN</h2>
+            <div class="portfolio-grid" id="pd-related"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div style="width: 100%; position: relative;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <p>&copy; <span id="year">2026</span></p>
+                <p>All rights reserved.</p>
+            </div>
+            <h1 class="footer-giant" id="footer-name">MediaPro</h1>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        setTimeout(() => {
+            const load = document.getElementById('loading');
+            if(load) { load.style.opacity = '0'; setTimeout(()=>load.style.display='none', 500); }
+        }, 800); // Fail-safe loader removal
+    </script>
+</body>
+</html>

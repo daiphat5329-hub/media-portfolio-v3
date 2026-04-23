@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch vụ | High-end Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="noise-overlay"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="navbar" style="background: rgba(10, 10, 10, 0.95);">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">MEDIA<span>PRO</span></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="portfolio.html">Dự án</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="services.html" class="active">Dịch vụ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="subpage-hero gs-reveal">
+        <div class="container">
+            <h1 class="giant-text text-stroke">GIẢI PHÁP</h1>
+        </div>
+    </div>
+
+    <section class="services" style="padding-top: 50px;">
+        <div class="container">
+            <div class="service-list gs-reveal" id="services-list" style="margin-top: 100px;">
+                <!-- Javascript will load services here from site.json -->
+            </div>
+            <img src="images/uploads/vfx_city_after.png" class="abstract-3d-img gs-reveal" alt="VFX Background">
+        </div>
+    </section>
+
+    <footer>
+        <div style="width: 100%; position: relative;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <p>&copy; <span id="year">2026</span></p>
+                <p>All rights reserved.</p>
+            </div>
+            <h1 class="footer-giant" id="footer-name">MediaPro</h1>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

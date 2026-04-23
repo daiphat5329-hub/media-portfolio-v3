@@ -1,0 +1,36 @@
+{
+  "site": {
+    "name": "Đại Phát Nguyễn",
+    "tagline": "KỂ CÂU CHUYỆN CỦA BẠN",
+    "sub_tagline": "Camera-man kiêm Video Editor với 7 năm kinh nghiệm",
+    "hero_bg": "images/uploads/hero_bg_lunchbox.png",
+    "about_short": "Mình là Đại Phát, một Camera-man kiêm Video Editor với 7 năm kinh nghiệm. Bắt nguồn từ niềm đam mê với những thước phim, mình đã nghiêm túc tìm tòi, học hỏi để biến những khoảnh khắc ấy trở nên sống động và thú vị hơn.",
+    "about_long": "<p>Hành trình 7 năm đã đưa mình thử sức với nhiều thể loại video khác nhau, được hợp tác cùng nhiều thương hiệu, gặp gỡ nhiều đối tác. Từ đó, giúp mình trau dồi thêm kiến thức và kỹ năng cho chặng đường làm nghề của mình.</p><p>Với kinh nghiệm đa dạng trong nhiều thể loại video, mình tự tin có thể trở thành một phần cùng team đưa dự án thành công.</p>",
+    "email": "daiphat.5329@gmail.com",
+    "phone": "+84 369096143",
+    "social": [
+      {
+        "platform": "Facebook",
+        "url": "fb.com/daiphat212"
+      }
+    ],
+    "services": [
+      {
+        "name": "Quay phim (Cinematography)",
+        "desc": "Quay TVC, MV ca nhạc, Video Doanh nghiệp với thiết bị high-end."
+      },
+      {
+        "name": "Dựng phim (Video Editing)",
+        "desc": "Cắt dựng nhịp điệu, kỹ xảo chuyển cảnh mượt mà."
+      },
+      {
+        "name": "Chỉnh màu (Color Grading)",
+        "desc": "Đổ màu cinematic, tạo mood & tone chuẩn điện ảnh."
+      },
+      {
+        "name": "Kỹ xảo (VFX & 3D)",
+        "desc": "Thêm các yếu tố 3D, loại bỏ vật thể, compositing."
+      }
+    ]
+  }
+}

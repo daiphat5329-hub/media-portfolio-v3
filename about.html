@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu | High-end Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="noise-overlay"></div>
+    <div class="ambient-glow glow-1"></div>
+
+    <nav class="navbar" style="background: rgba(10, 10, 10, 0.95);">
+        <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">MEDIA<span>PRO</span></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="portfolio.html">Dự án</a></li>
+            <li><a href="about.html" class="active">Giới thiệu</a></li>
+            <li><a href="services.html">Dịch vụ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="subpage-hero gs-reveal">
+        <div class="container">
+            <h1 class="giant-text text-stroke">VỀ TÔI</h1>
+        </div>
+    </div>
+
+    <section id="about" class="about" style="padding-top: 50px;">
+        <div class="container">
+            <img src="images/uploads/thumb_ads_3d.png" class="abstract-3d-img gs-reveal" alt="Abstract 3D Shape">
+            
+            <div class="split-layout gs-reveal" style="grid-template-columns: 1fr 2fr; margin-top: 100px;">
+                <div>
+                    <h2 class="huge-text" style="color: var(--primary-color);">CÂU CHUYỆN</h2>
+                </div>
+                <div class="about-text" id="about-long-text" style="font-size: 1.5rem; line-height: 1.8; color: var(--text-main);">
+                    <!-- Content from site.json -->
+                </div>
+            </div>
+            
+            <div class="gs-reveal" style="margin-top: 150px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 100px;">
+                <h3 class="huge-text" style="margin-bottom: 50px;">KỸ NĂNG</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <div class="btn" style="border-radius: 0;">Cinematography</div>
+                    <div class="btn" style="border-radius: 0;">Video Editing</div>
+                    <div class="btn" style="border-radius: 0;">Color Grading</div>
+                    <div class="btn" style="border-radius: 0;">VFX Compositing</div>
+                    <div class="btn" style="border-radius: 0;">Content Production</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="width: 100%; position: relative;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <p>&copy; <span id="year">2026</span></p>
+                <p>All rights reserved.</p>
+            </div>
+            <h1 class="footer-giant" id="footer-name">MediaPro</h1>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
